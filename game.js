@@ -9,8 +9,26 @@ function getComputerChoice(){
 // console.log(getComputerChoice());
 
 function getHumanChoice(){
-    const input = prompt("Choose your input", "rock");
-    return input;
+    // const input = prompt("Choose your input", "rock");
+    // return input;
+    let input;
+
+    const rock = document.getElementById('rock');
+    const paper = document.getElementById("paper");
+    const scissors = document.getElementById("scissors");
+    const output = document.getElementById("output")
+
+    rock.addEventListener("click", function(){
+        input = rock;
+    });
+
+    paper.addEventListener("click", function(){
+        input = paper;
+    });
+
+    scissors.addEventListener("click", function(){
+        input = scissors;
+    });
 }
 
 // console.log(getHumanChoice());

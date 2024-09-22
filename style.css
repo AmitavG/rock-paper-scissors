@@ -5,4 +5,11 @@ body{
 #htp{
     padding: 10px;
     background-color: rgb(241, 241, 19);
+    margin: 30px;
+}
+
+.elements{
+    background-color: rgb(255, 0, 0);
+    padding: 20px;
+    margin: 50px;
 }
