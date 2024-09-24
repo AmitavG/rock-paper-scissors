@@ -24,7 +24,7 @@ function getHumanChoice(){
 
 let humanScore = 0;
 let computerScore = 0;
-let roundsPlayed = 0;
+let maxScore = 0;
 let maxRounds = 5;
 
 function playRound(humanChoice, computerChoice){
@@ -67,15 +67,15 @@ function playRound(humanChoice, computerChoice){
 }
 
 function playGame(humanChoice){
-    if(roundsPlayed < maxRounds){
+    if(maxScore < maxRounds){
         let computerSelection = getComputerChoice();
         console.log(`computer choice: ${computerSelection}`);
         console.log(`human choice: ${humanChoice}`);
 
         playRound(humanChoice, computerSelection);
-        roundsPlayed++;
+        maxScore = Math.max(humanScore, computerScore);
 
-        if(roundsPlayed == maxRounds){
+        if(maxScore == maxRounds){
             if(humanScore > computerScore)
                 console.log(`You won the game with ${humanScore} - ${computerScore}`);
             else if(humanScore < computerScore)
