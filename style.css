@@ -2,14 +2,48 @@ body{
     text-align: center;
 }
 
-#htp{
-    padding: 10px;
-    background-color: rgb(241, 241, 19);
-    margin: 30px;
-}
-
-.elements{
+/* .elements{
     background-color: rgb(255, 0, 0);
     padding: 20px;
     margin: 50px;
+} */
+
+h1{
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+h3{
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+button{
+    background-color: #3498db;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: grab;
+}
+
+button:hover{
+    background-color: #2980b9;
+}
+
+button.elements{
+    width: 120px;
+}
+
+#computer, #human, #round, #score, #result {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+#score, #result {
+    font-weight: bold;
+    color: #27ae60;
 }
